@@ -8,8 +8,8 @@
     <title>FoodWagon</title>
 </head>
 <body>
-    <header class="header container">
-        <nav class="nav header__nav">
+    <header class="header">
+        <nav class="nav header__nav container">
             <div class="logo nav__logo">
                 <img src="assets/img/logo.svg" alt="logo" class="logo__img">
                 <div class="logo__txts">
@@ -34,6 +34,29 @@
                 </div>
             </div>
         </nav>
+        <div class="content header__content">
+            <h1 class="content__title">Are you starving?</h1>
+            <h6 class="content__subtitle">Within a few clicks, find meals that are accessible near you</h6>
+            <div class="delivery content__delivery">
+                <div class="delivery__btns">
+                    <div class="delivery__btn delivery__btn_active">
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <span>Delivery</span> 
+                    </div>
+                    <div class="delivery__btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>Pickup</span> 
+                    </div>
+                </div>
+                <div class="delivery__form">
+                    <input class="delivery__input" type="text" placeholder="Enter Your Address">
+                    <div class="delivery__search-button">
+                        <i class="fa-solid fa-magnifying-glass delivery__fa-magnifying-glass"></i>
+                        <span>Find Food</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <script src="https://kit.fontawesome.com/3ceeb6dd71.js" crossorigin="anonymous"></script>

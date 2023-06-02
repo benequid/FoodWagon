@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Open+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Open+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@400;700;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cera-round-pro');
 
 :root {
@@ -203,4 +203,123 @@ html {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.header__content {
+    background-image: url(/assets/img/header__content-bg.png);
+    background-size: 100% 100%;
+    min-height: 100%;
+}
+
+.content {
+    padding: 13.2rem 22rem;
+}
+
+.content__title {
+    font-size: 8.8rem;
+    
+    color: var(--white-color);
+
+    margin-bottom: 1.5rem;
+}
+
+.content__subtitle {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.64rem;
+
+    color: #504F4F;
+
+    margin-bottom: 3.2rem;
+}
+.delivery {
+    background-color: var(--white-color);
+
+    padding: 2.4rem;
+
+    max-width: 85.6rem;
+
+    border-radius: 1rem;
+}
+
+.delivery__btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    margin-bottom: 5.4rem;
+}
+.delivery__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1rem;
+
+    padding: 1rem 2.4rem;
+
+    color: var(--gray-color-600);
+
+    cursor: pointer;
+}
+
+.delivery__btn span {
+    font-size: 1.8rem;
+}
+
+.delivery__btn_active {
+    background-color: rgba(241, 114, 40, 0.1);
+
+    border-radius: 0.8rem;
+
+    color: var(--warning-color);
+
+    cursor: pointer;
+}
+.fa-motorcycle {
+    font-size: 1.8rem;
+}
+.fa-bag-shopping {
+    font-size: 1.8rem;
+}
+.delivery__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1.6rem;
+}
+.delivery__input {
+    border: none;
+    outline: none;
+    border-radius: 0.8rem;
+
+    background-color: var(--gray-color-100);
+
+    padding: 1.2rem 38.5rem 1.2rem 4.6rem;
+}
+
+.delivery__search-button {
+    background: linear-gradient(95.71deg, #FF7A7A -39.64%, #F75900 135.31%);
+    padding: 2.1rem 4.8rem;
+    border-radius: 0.8rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1rem;
+
+    cursor: pointer;
+
+    color: var(--white-color);
+
+    font-size: 1.6rem;
+}
+.delivery__fa-magnifying-glass {
+    color: var(--white-color);
+
+    font-size: 1.4rem;
 }
