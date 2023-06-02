@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Open+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cera-round-pro');
+
+:root {
+    --323-color: linear-gradient(261.24deg, #FFAE00 63.85%, #FF8A00 111.94%);
+    --primary-color: #FFB30E;
+    --secondary-color: #2780ED;
+    --warning-color: #F17228;
+    --gray-color-50: #FCFCFC;
+    --gray-color-100: #F5F5F5;
+    --gray-color-200: #EEEEEE;
+    --gray-color-300: #E0E0E0;
+    --gray-color-400: #BDBDBD;
+    --gray-color-500: #9E9E9E;
+    --gray-color-600: #757575;
+    --gray-color-700: #616161;
+    --gray-color-800: #424242;
+    --gray-color-900: #212121;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --success-color: #79B93C;
+    --gradient-1: linear-gradient(95.09deg, #FFEABD 0%, #FFDDBA 101.93%);
+    --gradient-2: linear-gradient(180deg, #FFD077 -38.22%, #FFB30E 133.44%);
+    --gradient-222: linear-gradient(180deg, #FFE280 -38.22%, #FFAE00 133.44%);
+    --gradient-3: linear-gradient(180deg, #FF9F00 0%, #FFB800 100%);
+    --gradient-4: linear-gradient(180deg, #FFAE00 69.96%, #FFCD1E 133.44%);
+    --effect-shadow: 0px 76px 98px rgba(0, 0, 0, 0.04), 0px 16.9756px 70.0714px rgba(0, 0, 0, 0.0238443), 0px 5.05408px 18.3427px rgba(0, 0, 0, 0.0161557);
+    --effect-1: 0px 4px 85px rgba(255, 175, 23, 0.4);
+    --effect-shadow-2: 0px 14px 15px rgba(124, 124, 124, 0.06), 0px 27px 82px rgba(124, 124, 124, 0.28);
+    --effect-shadow-one: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    --effect-shadow-two: 0px 5px 10px rgba(253, 114, 92, 0.22), 0px 20px 40px rgba(250, 99, 35, 0.24);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+/* .header {
+} */
+
+.container {
+    max-width: 148rem;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.6rem 0 1.6rem 0;
+}
+
+/* .header__nav {
+} */
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1.15rem;
+
+    cursor: pointer;
+}
+
+/* .logo__img {
+} */
+
+.logo__txt_first {
+    font-size: 3.1rem;
+    line-height: 3.7rem;
+
+    color: var(--warning-color);
+}
+
+.logo__txt_second {
+    font-size: 3.1rem;
+    line-height: 3.7rem;
+
+    color: var(--primary-color);
+}
+
+/* .delivery-area {
+} */
+
+.delivery-area__txt_title {
+    font-size: 1.8rem;
+
+    color: var(--gray-color-800);
+
+    margin-right: 1.2rem;
+}
+
+.fa-solid {
+    font-weight: 900;
+}
+
+.fa-location-dot {
+    font-size: 1.8rem;
+
+    color: var(--primary-color);
+
+    margin-right: 0.9rem;
+}
+
+.delivery-area__txt_inside {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.52rem;
+
+    color: var(--gray-color-800);
+
+    margin-right: 0.4rem;
+}
+
+.delivery-area__txt_choice {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.52rem;
+
+    color: var(--gray-color-800);
+
+    cursor: pointer;
+}
+
+.interact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 3rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 0.8rem ;
+}
+
+.fa-magnifying-glass {
+    font-size: 1.8rem;
+
+    color: var(--primary-color);
+
+    cursor: pointer;
+}
+
+.search__txt {
+    font-size: 1.8rem;
+
+    color: var(--gray-color-800);
+
+    text-transform: capitalize;
+
+    cursor: pointer;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1rem;
+
+    padding: 1.4rem 2.4rem;
+
+    background-color: var(--white-color);
+
+    border-radius: 0.8rem;
+
+    box-shadow: var(--effect-shadow-one);
+
+    cursor: pointer;
+}
+
+.user__txt {
+    font-size: 1.8rem;
+
+    background-image: var(--gradient-3);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-user {
+    font-size: 1.8rem;
+
+    background-image: var(--gradient-3);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
